@@ -1,0 +1,23 @@
+body {
+  background-color: #f5f2ed;
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.page-enter-active{
+  transition: opacity 1s;
+}
+
+.page-leave-active{
+  transition: opacity 0s;
+}
+
+.page-enter, .page-leave-to{
+  opacity: 0;
+}
