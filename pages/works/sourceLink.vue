@@ -1,9 +1,16 @@
 <template>
   <el-row>
-    <el-col :offset="18" :span="6" :xs="{span: 10, offset: 14}">
+    <el-col 
+      :offset="18" 
+      :span="6" 
+      :xs="{span: 10, offset: 14}">
       <a :href="address">
-        <el-button plain class="link-button">
-          <github-icon name="github" class="custom-icon"></github-icon>
+        <el-button 
+          plain 
+          class="link-button">
+          <github-icon 
+            name="github" 
+            class="custom-icon"/>
           <div class="source-text">Source</div>
         </el-button>
       </a>
@@ -15,11 +22,16 @@
 import {GithubIcon } from 'vue-feather-icons'
 
 export default{
-  name: 'sourcelink',
+  name: 'Sourcelink',
   components: {
     GithubIcon 
   },
-  props: ['address']
+  props: {
+    address: {
+      type: String,
+      default: ''
+    }
+  }
 }
 </script>
 

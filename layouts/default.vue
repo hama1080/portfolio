@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TopBar></TopBar>
+    <TopBar/>
     <nuxt/>
   </div>
 </template>

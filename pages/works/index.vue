@@ -1,12 +1,18 @@
 <template>
   <div>
-    <div v-for="(work, index) in works" :key="index">
-      <nuxt-link v-bind:to="work.detail_path">
-        <el-card :body-style="{ padding: '0px' }" class="work-card">
-          <img v-bind:src="work.img_src"/>
+    <div 
+      v-for="(work, index) in works" 
+      :key="index">
+      <nuxt-link :to="work.detail_path">
+        <el-card 
+          :body-style="{ padding: '0px' }" 
+          class="work-card">
+          <img :src="work.img_src">
           <div class="card-text">
             <div class="work-title">{{ work.name }}</div>
-            <div class="work-date-wrap"><div class="work-date"><calendar-icon name="calendar" class="custom-icon"></calendar-icon>{{ work.date }}</div></div>
+            <div class="work-date-wrap"><div class="work-date"><calendar-icon 
+              name="calendar" 
+              class="custom-icon"/>{{ work.date }}</div></div>
           </div>
         </el-card>
       </nuxt-link>
@@ -30,6 +36,12 @@ export default {
           name: 'ポートフォリオサイト',
           img_src: '/works/portfolio/eyecatch.png',
           detail_path: '/works/portfolio'
+        },
+        {
+          date: '2017-2018',
+          name: 'Virtual Gareki Lab',
+          img_src: '/works/hiraganaGAN/eyecatch.png',
+          detail_path: '/works/vgl'
         },
         {
           date: '2018/3',

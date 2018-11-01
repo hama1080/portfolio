@@ -2,7 +2,7 @@
   <div v-show="show">
     <el-row>
       <el-col :span="24">
-        <img src="/profile_picture.png"/>
+        <img src="/profile_picture.png">
         <h1>@hama1080</h1>
         <h1>Takuto Hamano</h1>
         <h2>Software engineer with the knowledge of hardware.</h2>
@@ -21,10 +21,16 @@
 
     <el-row id="social">
       <el-col :span="24">
-        <a href="https://github.com/hama1080"><github-icon class="custom-icon"></github-icon></a>
-        <a href="https://twitter.com/hama1080"><twitter-icon name="twitter" class="custom-icon"></twitter-icon></a>
-        <a href="https://www.instagram.com/hama1080_/"><instagram-icon name="instagram" class="custom-icon"></instagram-icon></a>
-        <a href="https://www.linkedin.com/in/takutohamano/"><linkedin-icon name="linkedin" class="custom-icon"></linkedin-icon></a>
+        <a href="https://github.com/hama1080"><github-icon class="custom-icon"/></a>
+        <a href="https://twitter.com/hama1080"><twitter-icon 
+          name="twitter" 
+          class="custom-icon"/></a>
+        <a href="https://www.instagram.com/hama1080_/"><instagram-icon 
+          name="instagram" 
+          class="custom-icon"/></a>
+        <a href="https://www.linkedin.com/in/takutohamano/"><linkedin-icon 
+          name="linkedin" 
+          class="custom-icon"/></a>
       </el-col>
     </el-row>
   </div>

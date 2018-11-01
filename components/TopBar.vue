@@ -1,10 +1,22 @@
 <template>
   <div id="menu">
-    <el-menu :default-active="activeIndex" mode="horizontal" class="top-bar" :router=true
-             background-color="#f5f2ed" text-color="#333" active-text-color="#ff6347">
-      <el-menu-item class = "item" index="/">About</el-menu-item>
-      <el-menu-item class = "item" index="/works">Works</el-menu-item>
-      <el-menu-item class = "item" index="/photos">Photos</el-menu-item>
+    <el-menu 
+      :default-active="activeIndex" 
+      :router="true" 
+      mode="horizontal" 
+      class="top-bar"
+      background-color="#f5f2ed" 
+      text-color="#333" 
+      active-text-color="#ff6347">
+      <el-menu-item 
+        class = "item" 
+        index="/">About</el-menu-item>
+      <el-menu-item 
+        class = "item" 
+        index="/works">Works</el-menu-item>
+      <el-menu-item 
+        class = "item" 
+        index="/photos">Photos</el-menu-item>
     </el-menu>
   </div>
 </template>
