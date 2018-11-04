@@ -1,0 +1,26 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+
+      - add_ssh_keys:
+        fingerprints:
+          - 91:ba:63:33:85:51:2a:a3:6f:34:a5:c9:a2:57:98:d3
+ 
+      - run: npm install
+      - run: npm run generate
+
+  deploy:
+    name: Deploy
+    commands:
+      - git clone $DEPLOY_URL out
+      - cp -a dist/. out/.
+      - git add -A
+      - git commit -m "Auto deploy by CircleCI"
+      - git push
+
+
+
