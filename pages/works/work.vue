@@ -52,13 +52,13 @@
               </span>
             </div>
 
-            <div v-if="references.length > 0" >
-              <div class="sub-header">References</div>
+            <div v-if="publications.length > 0" >
+              <div class="sub-header">Publications</div>
               <div
-                v-for="(reference, index) in references"
+                v-for="(publication, index) in publications"
                 :key="index"
-                class="reference">
-                {{ reference }}
+                class="publication">
+                {{ publication }}
               </div>
             </div>
 
@@ -107,7 +107,7 @@ export default {
         return []
       }
     },
-    references:{
+    publications:{
       type: Array,
       default: function(){
         return []
@@ -167,7 +167,7 @@ export default {
 .tech{
   margin: 0 5px;
 }
-.reference{
+.publication{
   margin: 0 20px;
   text-align: left;
 }

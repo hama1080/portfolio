@@ -40,7 +40,7 @@ export default {
         {
           date: '2017-2018',
           name: 'Virtual Gareki Lab',
-          img_src: '/works/hiraganaGAN/eyecatch.png',
+          img_src: '/works/vgl/eyecatch.png',
           detail_path: '/works/vgl'
         },
         {

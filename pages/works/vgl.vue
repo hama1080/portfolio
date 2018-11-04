@@ -1,9 +1,9 @@
 <template>
   <div>
     <work
-      :screen-shots="['/works/portfolio/figure0.png']"
+      :screen-shots="['/works/vgl/figure0.png','/works/vgl/figure1.png','/works/vgl/figure2.png','/works/vgl/figure3.png']"
       :technologies="['C++', 'PhysX', 'OpenGL(GLSL)', 'WebSocket', 'Qt']"
-      :references="[
+      :publications="[
         'Performance comparison of physics engines to accelerate house-collapsing simulations, Proc. of IEEE International Symposium on Safety, Security and Rescue Robotics, 2016',
         '物理エンジンの性能評価に基づいたリアルタイム家屋倒壊シミュレーション, 日本機械学会論文集, 2018']"
       title="Virtual Gareki Lab"
