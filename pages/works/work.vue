@@ -161,14 +161,14 @@ export default {
 }
 
 .sub-header{
-  margin: 10px 0;
+  margin: 20px 0 5px 0;
   font-weight: bold;
 }
 .tech{
   margin: 0 5px;
 }
 .publication{
-  margin: 0 20px;
+  margin: 5px 20px;
   text-align: left;
 }
 </style>
