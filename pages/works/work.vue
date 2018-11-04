@@ -19,8 +19,8 @@
             </div>
 
             <div class = "screen-shots">
-              <div v-if="screenShots.length == 0"/>
-              <div v-else-if="screenShots.length == 1">
+              <div v-if="screenShots.length === 0"/>
+              <div v-else-if="screenShots.length === 1">
                 <img 
                   :src="screenShots[0]" 
                   style="max-width: 100%">
@@ -42,8 +42,8 @@
               </div>
             </div>
 
-            <div class="technologies">
-              <div class="tech-header">Technologies</div>
+            <div v-if="technologies.length > 0">
+              <div class="sub-header">Technologies</div>
               <span 
                 v-for="(technology, index) in technologies" 
                 :key="index" 
@@ -52,22 +52,19 @@
               </span>
             </div>
 
-            <div 
-              v-if="references.length > 0" 
-              class="references">
-              <div class="tech-header">References</div>
-              <span
+            <div v-if="references.length > 0" >
+              <div class="sub-header">References</div>
+              <div
                 v-for="(reference, index) in references"
                 :key="index"
-                class="tech">
+                class="reference">
                 {{ reference }}
-              </span>
+              </div>
             </div>
 
             <sourceLink 
-              v-if="sourceAddress!=''" 
+              v-if="sourceAddress!==''" 
               :address="sourceAddress"/>
-
           </el-col>
         </el-row>
 
@@ -101,13 +98,13 @@ export default {
     screenShots: {
       type: Array,
       default: function(){
-        return ['shot']
+        return []
       }
     },
     technologies:{
       type: Array,
       default: function(){
-        return ['technologies']
+        return []
       }
     },
     references:{
@@ -118,7 +115,7 @@ export default {
     },
     sourceAddress:{
       type: String,
-      default: 'address'
+      default: ''
     }
   },
   data () {
@@ -163,11 +160,15 @@ export default {
   margin: 30px 0;
 }
 
-.tech-header{
+.sub-header{
   margin: 10px 0;
   font-weight: bold;
 }
 .tech{
   margin: 0 5px;
+}
+.reference{
+  margin: 0 20px;
+  text-align: left;
 }
 </style>
