@@ -2,7 +2,7 @@
   <div>
     <work
       :screen-shots="['/works/portfolio/figure0.png']"
-      :technologies="['HTML/CSS', 'Vue.js', 'Nuxt.js', 'Element UI']"
+      :technologies="['HTML/CSS', 'Vue.js', 'Nuxt.js', 'Element UI', 'CircleCI']"
       title="ポートフォリオサイト"
       date="2018/6"
       description="Nuxt.jsを利用したポートフォリオサイト．UIライブラリとしてElement UIを利用．これまでに作ったものや，撮影した写真を掲載．"
