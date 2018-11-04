@@ -8,7 +8,7 @@ jobs:
 
       - add_ssh_keys:
         fingerprints:
-          - 91:ba:63:33:85:51:2a:a3:6f:34:a5:c9:a2:57:98:d3
+          - "91:ba:63:33:85:51:2a:a3:6f:34:a5:c9:a2:57:98:d3"
  
       - run: npm install
       - run: npm run generate
