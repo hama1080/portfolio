@@ -52,6 +52,18 @@
               </span>
             </div>
 
+            <div 
+              v-if="references.length > 0" 
+              class="references">
+              <div class="tech-header">References</div>
+              <span
+                v-for="(reference, index) in references"
+                :key="index"
+                class="tech">
+                {{ reference }}
+              </span>
+            </div>
+
             <sourceLink 
               v-if="sourceAddress!=''" 
               :address="sourceAddress"/>
@@ -96,6 +108,12 @@ export default {
       type: Array,
       default: function(){
         return ['technologies']
+      }
+    },
+    references:{
+      type: Array,
+      default: function(){
+        return []
       }
     },
     sourceAddress:{
