@@ -11,5 +11,6 @@ jobs:
       - run: git config --global user.name "hama1080"
       - run: git clone $DEPLOY_URL deploy
       - run: cp -a dist/. deploy/.
-      - run: cd deploy && git commit -am "Auto deploy by CircleCI"
+      - run: cd deploy && git add -A
+      - run: cd deploy && git commit m "Auto deploy by CircleCI"
       - run: cd deploy && git push origin master
