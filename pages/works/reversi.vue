@@ -5,7 +5,10 @@
       :technologies="['C', 'GrWin']"
       title="リバーシ"
       date="2011"
-      description="C言語+GrWinで作成したリバーシ(オセロ)ゲーム．αβアルゴリズムを利用した簡単なCPUも搭載している．"
+      description="
+      C言語+GrWinで作成したリバーシ(オセロ)ゲーム。
+      αβアルゴリズムを利用した簡単なCPUも搭載している。
+      "
       source-address=""
     />
   </div>

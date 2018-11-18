@@ -5,7 +5,11 @@
       :technologies="['Unreal Engine 4']"
       title="HexMan"
       date="2016/3"
-      description="Unreal Engine 4を利用して作成した2人対戦用ゲーム．上下分割画面で，それぞれのキャラクターを操作．ボンバーマンのように爆弾を設置し，相手を倒すことが目的．操作性は非常に悪い．"
+      description="
+      Unreal Engine 4を利用して作成した2人対戦用ゲーム。
+      上下分割画面で、それぞれのキャラクターを操作。
+      ボンバーマンのように爆弾を設置し、相手を倒すことが目的。
+      操作性は非常に悪いが、笑いは起きた。"
       source-address=""
     />
   </div>
