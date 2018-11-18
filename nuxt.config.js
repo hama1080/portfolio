@@ -42,6 +42,11 @@ module.exports = {
   css: [
     'element-ui/lib/theme-chalk/index.css',
     '~/assets/main.css'
+  ],
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-121887790-1'
+    }]
   ]
 }
 
