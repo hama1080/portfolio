@@ -29,8 +29,25 @@ export default {
       activeIndex: '/'
     }
   },
+  watch: {
+    '$route' (to, from) { 
+      this.updateActiveIndex()
+    }
+  },
   created: function () {
-    this.activeIndex = this.$route.path
+    this.updateActiveIndex()
+  },
+  methods: {
+    updateActiveIndex(){
+      let path = this.$route.path
+      if(path.indexOf('works') != -1){
+        this.activeIndex = '/works'
+      }else if(path.indexOf('photos') != -1){
+        this.activeIndex = '/photos'
+      }else{
+        this.activeIndex = '/'
+      }
+    }
   }
 }
 </script>
