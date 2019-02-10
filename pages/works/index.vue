@@ -32,6 +32,12 @@ export default {
     return {
       works: [
         {
+          date: '2018/12',
+          name: 'Analog Synthesizer',
+          img_src: '/works/analogSynthesizer/eyecatch.jpg',
+          detail_path: '/works/analogSynthesizer'
+        },
+        {
           date: '2018/6',
           name: 'ポートフォリオサイト',
           img_src: '/works/portfolio/eyecatch.png',
